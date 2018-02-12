@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Virtualizer - Mock Server Using GoLang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+  
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Virtualizer</span>
+        <span class="d-none d-lg-block">
+          <!--<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">-->
+		  <img width="70%" src="img/portfolio/fullsize/icon1.png"></img>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">TOML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Ready-To-Use Methods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">How-TO</a>
+          </li>
+		   <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Downloads</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#benefits">benefits</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://34.195.187.107:3000">iPAS Portal</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Virtualizer
+            <span class="text-primary">Using GoLang</span>
+          </h1>
+          <div class="subheading mb-5">Easy to use, faster to deploy.
+           <!-- <a href="mailto:name@email.com">name@email.com</a>-->
+          </div>
+          <p class="mb-5">This tool helps you to easily create all types of responses for dependencies such as REST or SOAP services using a configuration file (.TOML). With this you can test applications easily and affectively, isolate the system-under-test and ensure tests run reliably.Having to configure your responses in the TOML file using pre-built Go methods can reduce your time to set up a mock server and easily deploy them independently and quickly. At the end all you have to do is place the VirtualizeQD.exe file and the TOML file in the same location and run (double click .exe file) your own mock server to simulate your desired responses. Details on how to edit your TOML file in order to configure your responses are given below.</p>
+       <!--  <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>-->
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">TOML</h2>
+<p>TOML file is a text file with a .toml extension that will come with the tool's package. You can setup your mock service using this file. This doesn't need any amount of programming expertise, follow the below instructions and fill the information as per the template and you will soon have your mock service ready</p>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Services Section</h3>
+              <div class="subheading mb-3">[[services]]</div>
+              <p>sname="SampleServiceName"</br>
+				path="/SamplePathOfTheEndpoint"</br>
+				type="text/xml"</p>
+            </div>
+            <div class="resume-date text-md-right">
+              
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Operations Section</h3>
+              <div class="subheading mb-3">[[services.operations]]</div>
+              <p>opname="SampleOperationName"</br>
+				delay=1</br>
+				monitoring=true</p>
+            </div>
+            <div class="resume-date text-md-right">
+              
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Output Section</h3>
+              <div class="subheading mb-3">[[services.operations.outputs]]</div>
+              <p>tagvalue="sampleTagValue"</br>
+				response=My First Mock response</br>
+				[services.operations.outputs.variables]</br>
+				Samplevariables="*customFunc()"</p>
+            </div>
+            <div class="resume-date text-md-right">
+             
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Description</h3>
+              <div class="subheading mb-3"></div>
+              <p>The file consists of three sections. These three sections serve as the input to the VirtualizeQD server. The description of these three sections are given below along with an example for a sample mock service - Service section begins with [[services]], this format/syntax has to be maintained for all the mock services that needs to be created. This will be followed by 'sname' which needs to be assigned the name of the service you wish to create. 'sname' should appear as how it appears in the template, the service name is user provided. sname is followed by 'path', the value of the 'path' si user provided and should begin with '/' followed by the end point name that you wish to have. Finally 'type' for SOAP services it should be "text/xml" and for REST it should be "text/json" - Operations section begins with [[services.operations]], this format/syntax has to be maintained for all the mock services that needs to be created. This will be followed by 'opname' which needs to be assigned the name of the operation you wish to create. 'opname' should appear as how it appears in the template, the actual operation name is user provided. opname is followed by 'delay', the value of the 'delay' is taken as number of seconds the server waits before sending the response, it is user provided and should contain integers. Finally 'monitoring' is for enabling detailed monitoring (log request and response)for the services it should be either set to true (enable) or false(disable). - Output section contains two sections with [[services.operations.outputs]] and [[services.operations.outputs.variables]], this format/syntax has to be maintained for all the mock services that needs to be created.[[services.operations.outputs]] contains 'tagvalue' to which the tagname of any unique tag which will be present in the incoming request is assigned. This acts as an indicator to help the server map correct responses to the incoming requests. The value can either be the actual tag name or the Xpath to it. This will be followed by 'response' which hold the actual response to be sent. 'response' should appear as how it appears in the template. Incase there are dynamic values in the response, we can address those values by invoking pre-built GO functions using the nexxt section [services.operations.outputs.variables]. This is the section where Pre built Go Methods are mentioned and the values are passed to the response. the value of the 'path' si user provided and should begin with '/' followed by the end point name that you wish to have. Finally 'type' for SOAP services it should be "text/xml" and for REST it should be "text/json"</p>
+            </div>
+            <div class="resume-date text-md-right">
+              
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Ready-To-Use Methods</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"></h3>
+			  <b>getRandomNumber(UpperLimit,LowerLimit)</b>
+              
+              <div>Usage: Rdn=getRandomNumber(1,100). Rdn is user defined and can be any name. This function will return a random number between 1 and 100 (excluding both numbers) everytime its is invoked. The range of the upper and lower limits can exceed to more than 10 digit.</div>
+            
+         </div>
+		          </div>
+		 
+		 
+             <!--  <div class="resume-date text-md-right">
+              <span class="text-primary">August 2006 - May 2010</span>
+            </div>
+          </div>-->
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <b>getFormattedTimeStamp(YYYY-MM-DD-hh:mm:ss-00)</b>
+              <div >Usage: TimeStamp=getFormattedTimeStamp(2006-01-02-15:04:05-00). TimeStamp is user defined and can be any name.This function will return the current time stamp value in the user mentioned format</div>
+            </div>
+			 </div>
+			
+			<div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>shuffle(ABCDE)</b>
+              <div >Usage: variable=shuffle(ABCDEGHIJK). variable is user defined and can be any name.This function will return the jumbled value from the the user mentioned value</div>
+            </div>
+			
+          </div>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>getGUID()</b>
+              <div >Usage: variable=getGUID(). variable is user defined and can be any name.This function will return the GUID (session ID) for C# application</div>
+            </div>
+			
+          </div>
+		  
+		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>getFormattedTimeStampWithOffset(2006-01-02-15:04:05-00,24,h)</b>
+              <div >Usage: variable=getGUID(). variable is user defined and can be any name.This function will return the GUID (session ID) for C# application</div>
+            </div>
+			
+          </div>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>DBInsertValue(Xpath,DBName,CollectionName)</b>
+              <div >Usage: DBInsertValue(Xpath,DBName,CollectionName).This function will will insert the value of the tag mentioned in the Xpath into MongoDB. DBName and collection names needs to be mentioned explicitly</div>
+            </div>
+			
+          </div>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>DBFetch(RowName,DBName,CollectionName)when(Xpath)matches(RowName)</b>
+              <div >Usage: Variable="DBFetch(ticketid,DBName,CollectionName)when(Envelope.Header.requestHeader.trackingId)matches(customerid)".This function will fetch value from row called 'ticketid' from MongoDB, when value of the Xpath of the incoming request matches the value in the row called 'customerid' in DB.</div>
+            </div>
+			
+          </div>
+		 
+		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>Repeat("String")wrtTag(Xpath)</b>
+              <div >Usage: Variable="Repeat("String")wrtTag(Envelope.Body.validateItem.request.itemsToValidate)".This function will repeat the value mentioned within Repeat, based on the number of occurences of the tag value mentioned as Xpath.</div>
+            </div>
+			
+          </div>
+		  
+		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>tagvalue ="Xpath"</b>
+              <div >Usage: tagvalue ="Envelope.Body.MultipleOutputs.surveyRequest.opportunityDetails.opportunityId".tagvalue is user defined and can be any name. This will fetch the tag value of the Xpath mentioned and assigned it to tagvalue</div>
+            </div>
+			
+          </div>
+		    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>tagvalue ="Extract(Xpath,delimiter,index,nil)"</b>
+              <div >Usage: tagvalue=(Envelope.Body.standardizeAddress.StandardizeAddress.requestedAddresses, ,0,nil).tagvalue is user defined and can be any name. This will extract the tag value of the Xpath mentioned and will seperate that value using the delimiter mentioned in the next field. Index is an integer value which suggests the exact value to assign to tagvalue after being split using the delimiter. The final field is nil by default, if any trailing character needs to be trimmed from the value that can be mentioned here.</div>
+            </div>
+			
+          </div>
+		    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			  <div class="resume-content mr-auto">
+              <b>tagvalue ="Java(ClassFileName,responseFilePath)"</b>
+              <div >Usage: tagvalue=Java(MyJavaLogic, response.txt)tagvalue is user defined and can be any name. For java enthusiastics this option enables them to process the incoming request in their custom java logic and send the desired response through Virtualize server.The Jave code writes the output to a file (as of now there is no direct passing between Java and Go) which is then picked up by the GO server to append to the response as desired. The compiled Java class's name the output files's name should be mentioned in the method. Incoming request is passed to the java as command line argument.</div>
+            </div>
+			
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">HOW-TO</h2>
+
+          <div class="subheading mb-3">HOW-TO quickly configure an end point for simple response</div>
+		  <img src="img/virtualize/SimpleResponse.gif" width ="80%" name="image1"> 
+		  
+		   <div class="subheading mb-3">HOW-TO set time delays for the responses</div>
+		  <p>Setting the delay to 1 makes your end point to wait for 1 second before it could send the response. The time unit is in seconds</p>
+			  <img src="img/virtualize/Timedelay.png" width ="80%" name="image1"> 
+		  
+		 <div class="subheading mb-3">HOW-TO make the end point respond only if a particular value is found in the request </div>
+			   <p>Assigning a value/string to 'tagvalue' variable can make the end point to respond only when this particular string is found in the request</p>
+			  <img src="img/virtualize/TagValue.png"  width ="80%" name="image1">
+			  
+		   <div class="subheading mb-3">HOW-TO disable the request and response being logged in the server </div>
+			   <p>By default logging in enabled in the config file.</p>
+			  <img src="img/virtualize/monitoring.png" width ="80%" name="image1">
+		  
+		    <div class="subheading mb-3">HOW-TO call 'Ready-To-Use' method in order to pass the output in the response </div>
+			   <p>The below example will generate a random variable and send it in the response. Note tha inorder to be sent in the response the user defined variable must to enclosed in the flowery braces with the dollar symbol in the front </p>
+			  <img src="img/virtualize/Randomno.png" width ="80%" name="image1"> 
+       
+
+      </section>
+
+
+	  
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="download">
+        <div class="my-auto">
+          <h2 class="mb-5">Downloads</h2>
+		   <div class="subheading mb-3"><a href="Virtualizer_windows.zip">Download Virtualizer For Windows</a></div>
+		   <div class="subheading mb-3"><a href="Virtualizer_Linux.zip">Download Virtualizer For Linux</a></div>   
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Extract the zip file after downloading</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Set up your mock responses and end point for the request your are trying to address </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Double click the the .exe file , your server will be up in the port 9080 ready to send the responses</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Monitor Logs (if monitoring=true is set) and Access log will get auto created in the server directory</li>
+          </ul>
+        </div>
+		 </section>
+		 
+		 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="benefits">
+		 <h2 class="mb-5">benefits</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Platform independent</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Quicker time to develop and deploy stubs</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i> 
+              Cloud based solution</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>  
+              Integrable to Monitoring Stacks (like ELK, TICK)</li>
+            <li>
+             
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
